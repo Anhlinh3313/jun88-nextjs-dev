@@ -343,20 +343,13 @@ export default function Home() {
         </div>
       </div>
       </div>
-
-      
       </div>
-
-      
-     
-      
       <div id="cskh-icon">
         <a href="https://t.me/+w2UhveqvYOUwYWM1">
             <Image src={ImgTele} alt="cskh-icon" />
         </a>
       </div>
     </div>
-     
     </div>
   )
 }

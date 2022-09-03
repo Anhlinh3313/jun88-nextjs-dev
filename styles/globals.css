@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-image: url(  https://jun88.vin/images/bg.jpg);
+  background-image: url('../app/@img/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
@@ -193,7 +193,7 @@ body {
   width: 100%;
 }
 #menu-container #menu .btn-bg {
-  background-image: url(https://jun88.vin/images/icons/btn-bg-1.png);
+  background-image: url('../app/@img/btn-bg-1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -249,7 +249,7 @@ a {
 }
 
 #btn-home {
-  background-image: url(https://jun88.vin/images/icons/btn-home-bg.png);
+  background-image: url('../app/@img/btn-home-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
