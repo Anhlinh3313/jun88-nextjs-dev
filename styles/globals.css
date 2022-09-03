@@ -1,0 +1,328 @@
+html,
+body {
+  height: 100%;
+  background-image: url(  https://jun88.vin/images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.links-container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.notification {
+  border: 1px solid #02a9dc;
+  border-radius: 25px;
+  font-size: 20px;
+  box-shadow: 0 0 2px #02a9dc, 0 0 2px #02a9dc inset;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.icon-noti {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 40px;
+}
+
+.searchText {
+  color: #02a9dc;
+}
+
+.float-lg-left {
+  float: left !important;
+}
+
+.box-promos {
+  padding: 10px 0;
+  width: 100%;
+  height: 430px;
+}
+.swiper-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.domains-list {
+  width: 100%;
+}
+
+.link {
+  background-color: #124da5da;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 4px;
+  border-radius: 42px;
+  margin-top: 10px;
+}
+
+.p-0 {
+  padding: 0!important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.col-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.link-number {
+  float: left;
+}
+
+.yellow-circle {
+  background: linear-gradient(to bottom, #cdf0ff 0%, #62a8c6 47%, #cee8ff 100%);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.black-circle {
+  background-color: #0e5f81;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+}
+
+.test-p {
+  color: white;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.link-info {
+  margin-top: 13px;
+}
+
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.h5 {
+  font-size: 14px !important;
+}
+
+.ml-3 {
+  margin-left: 1rem !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+.link .button {
+  background: linear-gradient(to bottom, #90d3ef 0%, #489dc1 47%, #68a3d7 100%);
+  border: none;
+  padding: 2px 8px;
+  border-radius: 14px;
+  margin-top: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+}
+
+#menu-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 115%;
+  left: 0;
+}
+
+#menu-container #menu {
+  width: 800px;
+  height: 340px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+#menu-container #menu #menu-bg {
+  width: 100%;
+}
+#menu-container #menu .btn-bg {
+  background-image: url(https://jun88.vin/images/icons/btn-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+}
+
+#menu-container #menu #android {
+  top: 210px;
+  left: 78px;
+}
+
+#menu-container #menu .btn-bg img {
+  margin-top: 35px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+.item-menu {
+  padding-top: 10px;
+}
+
+#agent {
+  top: 87px;
+  left: 184px;
+}
+
+#customer-service {
+  top: 42px;
+  left: 337px;
+}
+
+#gift {
+  top: 87px;
+  left: 490px;
+}
+
+#ios {
+  top: 210px;
+  left: 592px;
+}
+
+.home-text-item{
+    color: black;
+    font-weight: 600;
+    text-decoration: none
+}
+
+#btn-home {
+  background-image: url(https://jun88.vin/images/icons/btn-home-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 84px;
+  position: absolute;
+  top: 240px;
+  left: 250px;
+}
+
+#btn-home-items {
+  margin-top: 23px;
+  margin-left: 50px;
+}
+
+#home-icon {
+  float: left;
+}
+
+#home-text {
+  float: left;
+  padding-top: 8px;
+  margin-left: 32px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.item-menu-bg{
+  padding-top: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#cskh-icon {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  animation: at-ripple-blue 0.6s linear infinite;
+}
