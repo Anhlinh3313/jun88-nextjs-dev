@@ -1,11 +1,11 @@
 html,
 body {
-  height: 100%;
   background-image: url('../app/@img/bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   font-family: "Open Sans", sans-serif;
   position: relative;
+  height: 940px;
 }
 
 .links-container {
@@ -49,32 +49,47 @@ body {
   width: 100%;
   height: 430px;
 }
+
 .swiper-container {
   margin: 0 auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-.swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
+
+.swiper-container .swiper-slide-active img {
+  opacity: 100%;
+  filter: unset;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  animation: hightlight 0.5s infinite;
+}
+
+.swiper-container .swiper-slide-active {
+  transform: scale(1.2, 2);
   z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.swiper-wrapper {
+width: 100%;
+height: 100%;
 }
 
 .swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  background-size: contain;
+  width: 80%;
   height: 100%;
-  position: relative;
-  transition-property: transform;
+  filter: brightness(0.3);
+  border-radius: 8px;
 }
 
 .domains-list {
   width: 100%;
+  padding-left: 15px;
 }
 
 .link {
@@ -86,7 +101,7 @@ body {
 }
 
 .p-0 {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .float-left {
@@ -153,11 +168,6 @@ body {
   text-align: right !important;
 }
 
-.pr-2,
-.px-2 {
-  padding-right: 0.5rem !important;
-}
-
 .link .button {
   background: linear-gradient(to bottom, #90d3ef 0%, #489dc1 47%, #68a3d7 100%);
   border: none;
@@ -171,12 +181,43 @@ body {
   font-size: 14px;
 }
 
+.link .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link .button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 20px;
+  transition: 0.5s;
+}
+
+.link .button:hover span {
+  padding-right: 25px;
+}
+
+.link .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
 #menu-container {
   text-align: center;
   position: absolute;
   width: 100%;
-  height: 115%;
+  height: 0px;
   left: 0;
+  bottom: 0px;
 }
 
 #menu-container #menu {
@@ -192,6 +233,7 @@ body {
 #menu-container #menu #menu-bg {
   width: 100%;
 }
+
 #menu-container #menu .btn-bg {
   background-image: url('../app/@img/btn-bg-1.png');
   background-repeat: no-repeat;
@@ -242,10 +284,10 @@ a {
   left: 592px;
 }
 
-.home-text-item{
-    color: black;
-    font-weight: 600;
-    text-decoration: none
+.home-text-item {
+  color: black;
+  font-weight: 600;
+  text-decoration: none
 }
 
 #btn-home {
@@ -279,7 +321,7 @@ a {
   clear: both;
 }
 
-.item-menu-bg{
+.item-menu-bg {
   padding-top: 30px;
 }
 
@@ -317,12 +359,46 @@ img {
   object-fit: cover;
 }
 
+@-webkit-keyframes at-ripple-blue {
+  0% {
+      box-shadow: 0 4px 10px rgba(65, 185, 255, 0.1), 0 0 0 0 rgba(65, 179, 255, 0.1), 0 0 0 5px rgba(65, 147, 255, 0.1), 0 0 0 10px rgba(65, 195, 255, 0.1);
+  }
+
+  100% {
+      box-shadow: 0 4px 10px rgba(65, 179, 255, 0.582), 0 0 0 5px rgba(65, 170, 255, 0.274), 0 0 0 10px rgba(65, 185, 255, 0.205), 0 0 0 20px rgba(65, 201, 255, 0.479);
+  }
+}
+
+@keyframes at-ripple-blue {
+  0% {
+      box-shadow: 0 4px 10px rgba(111, 155, 180, 0.774), 0 0 0 0 rgba(72, 126, 161, 0.644), 0 0 0 5px rgba(42, 94, 161, 0.788), 0 0 0 10px rgba(47, 120, 153, 0.719);
+  }
+
+  100% {
+      box-shadow: 0 4px 10px rgba(91, 162, 209, 0.192), 0 0 0 5px rgba(80, 157, 219, 0.274), 0 0 0 10px hsla(202, 75%, 71%, 0.205), 0 0 0 20px rgba(107, 203, 241, 0.192);
+  }
+}
+
 #cskh-icon {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   animation: at-ripple-blue 0.6s linear infinite;
+}
+
+#cskh-icon img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #cskh-icon {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 20px;
+      bottom: 50px;
+  }
 }

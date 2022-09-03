@@ -1,24 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import "bootstrap/dist/css/bootstrap.css";
-import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Img50ty, ImgAgent, ImgAndroid, ImgCus, ImgGift, ImgHome, ImgIOS, ImgLogo, ImgQuaKhung, ImgQuaVip, ImgRinging, ImgSHT50, ImgSieuLiXi, ImgSKM, ImgSTTV, ImgTele, ImgThuongKhiThang } from '../app/@img'
+import SwiperCore,{  Autoplay } from 'swiper';
 
 import "swiper/css";
 import "swiper/css/autoplay";
 
+SwiperCore.use([Autoplay]);
+
 export default function Home() {
-
-  const [chromeWidth, setChromeWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setChromeWidth(window.innerWidth);
-    });
-  }, [typeof window !== "undefined" && window]);
 
   return (
   <div>
@@ -38,13 +30,8 @@ export default function Home() {
           <div className="icon-noti">
             <Image src={ImgRinging} />
           </div>
-          <div>
-              <marquee>
-              Siêu khuyến mãi khủng chào mừng sự kiện{" "}
-              <span className="searchText"> Jun88.com </span> trở thành đối tác
-              hợp tác chính thức FIFA Word Cup QATAR 2022
+            <marquee>Siêu khuyến mãi khủng chào mừng sự kiện{" "}<span className="searchText"> Jun88.com </span> trở thành đối tác hợp tác chính thức FIFA Word Cup QATAR 2022
             </marquee>
-          </div>
         </div>
         <div className="col-lg-12 col-xl-6 pl-lg-0 float-lg-left " id="screen-img">
             <div className="box-promos">
@@ -271,79 +258,80 @@ export default function Home() {
               </div>
             </div>
         </div>
-        <div className="col-lg-12 col-xl-6 pr-lg-0">
+        
+       
+    
+      </div>
       <div id="menu-container">
-        <div id="menu">
-            <div id="menu-bg">
-              <img src="https://jun88.vin/images/icons/menu-bg.png" alt="Alternate Text" />
-            </div>
-            <div className="btn-bg" id="android">
-              <div className="item-menu-bg">
-                <a href="https://jun47.com/" target="_blank" class="icon" icon-name="android">
-                    <Image src={ImgAndroid} alt="android-icon" />
-                </a>
-                <p>
-                    <a className='home-text-item' href="https://jun47.com/" target="_blank">ANDROID</a>
-                </p>
+          <div id="menu">
+              <div id="menu-bg">
+                <img src="https://jun88.vin/images/icons/menu-bg.png" alt="Alternate Text" />
               </div>
-            </div>
-            <div class="btn-bg" id="agent">
-             <div className="item-menu-bg">
-                <a href="https://jun.bet/" target="_blank" class="icon" icon-name="agent">
-                  <Image src={ImgAgent} alt="android-icon" />
-                </a>
-                <p>
-                    <a className='home-text-item' href="https://jun.bet/" target="_blank">ĐẠI LÝ</a>
-                </p>
-              </div>
-            </div>
-            <div class="btn-bg" id="customer-service">
-            <div className="item-menu-bg">
-                <a href="https://jun88.gofiber.dev/tawkto" target="_blank" class="icon" icon-name="customerService">
-                  <Image src={ImgCus} alt="android-icon" />
-                </a>
-                <p>
-                    <a className='home-text-item' href="https://jun88.gofiber.dev/tawkto" target="_blank">CSKH</a>
-                </p>
-            </div>
-            </div>
-            <div class="btn-bg" id="gift">
-            <div className="item-menu-bg">
-            <a href="https://www.jun85.com/promotions" target="_blank" class="icon" icon-name="gift">
-                  <Image src={ImgGift} alt="android-icon" />
-                </a>
-                <p>
-                    <a className='home-text-item' href="https://www.jun85.com/promotions" target="_blank">KHUYẾN MÃI</a>
-                </p>
-            </div>
-            </div>
-            <div class="btn-bg" id="ios">
-            <div className="item-menu-bg">
-                <a href="https://jun47.com/" target="_blank" class="icon" icon-name="ios">
-                  <Image src={ImgIOS} alt="android-icon" />
-                </a>
-                <p>
-                    <a className='home-text-item' href="https://jun47.com/" target="_blank">IOS</a>
-                </p>
-            </div>
-            </div>
-            <div id="btn-home">
-                <div id="btn-home-items">
-                    <div id="home-icon">
-                        <a href="https://www.jun82.com/" target="_blank">
-                          <Image src={ImgHome} alt="android-icon" />
-                        </a>
-                    </div>
-                    <div id="home-text">
-                        <a className='home-text-item' href="https://www.jun82.com/" target="_blank">TRANG CHỦ</a>
-                    </div>
-                    <div class="clear-both"></div>
+              <div className="btn-bg" id="android">
+                <div className="item-menu-bg">
+                  <a href="https://jun47.com/" target="_blank" class="icon" icon-name="android">
+                      <Image src={ImgAndroid} alt="android-icon" />
+                  </a>
+                  <p>
+                      <a className='home-text-item' href="https://jun47.com/" target="_blank">ANDROID</a>
+                  </p>
                 </div>
-            </div>
+              </div>
+              <div class="btn-bg" id="agent">
+              <div className="item-menu-bg">
+                  <a href="https://jun.bet/" target="_blank" class="icon" icon-name="agent">
+                    <Image src={ImgAgent} alt="android-icon" />
+                  </a>
+                  <p>
+                      <a className='home-text-item' href="https://jun.bet/" target="_blank">ĐẠI LÝ</a>
+                  </p>
+                </div>
+              </div>
+              <div class="btn-bg" id="customer-service">
+              <div className="item-menu-bg">
+                  <a href="https://jun88.gofiber.dev/tawkto" target="_blank" class="icon" icon-name="customerService">
+                    <Image src={ImgCus} alt="android-icon" />
+                  </a>
+                  <p>
+                      <a className='home-text-item' href="https://jun88.gofiber.dev/tawkto" target="_blank">CSKH</a>
+                  </p>
+              </div>
+              </div>
+              <div class="btn-bg" id="gift">
+              <div className="item-menu-bg">
+              <a href="https://www.jun85.com/promotions" target="_blank" class="icon" icon-name="gift">
+                    <Image src={ImgGift} alt="android-icon" />
+                  </a>
+                  <p>
+                      <a className='home-text-item' href="https://www.jun85.com/promotions" target="_blank">KHUYẾN MÃI</a>
+                  </p>
+              </div>
+              </div>
+              <div class="btn-bg" id="ios">
+              <div className="item-menu-bg">
+                  <a href="https://jun47.com/" target="_blank" class="icon" icon-name="ios">
+                    <Image src={ImgIOS} alt="android-icon" />
+                  </a>
+                  <p>
+                      <a className='home-text-item' href="https://jun47.com/" target="_blank">IOS</a>
+                  </p>
+              </div>
+              </div>
+              <div id="btn-home">
+                  <div id="btn-home-items">
+                      <div id="home-icon">
+                          <a href="https://www.jun82.com/" target="_blank">
+                            <Image src={ImgHome} alt="android-icon" />
+                          </a>
+                      </div>
+                      <div id="home-text">
+                          <a className='home-text-item' href="https://www.jun82.com/" target="_blank">TRANG CHỦ</a>
+                      </div>
+                      <div class="clear-both"></div>
+                  </div>
+              </div>
+          </div>
         </div>
-      </div>
-      </div>
-      </div>
       <div id="cskh-icon">
         <a href="https://t.me/+w2UhveqvYOUwYWM1">
             <Image src={ImgTele} alt="cskh-icon" />
