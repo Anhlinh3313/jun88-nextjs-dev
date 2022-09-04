@@ -282,9 +282,62 @@ body {
   position: absolute;
 }
 
+#menu-container #menu .btn-bg:hover {
+  cursor: pointer;
+}
+
+#menu-container #menu .btn-bg:hover>p a {
+  color: white;
+}
+
+#menu-container #menu .btn-bg img {
+  margin-top: 35px;
+}
+
+#menu-container #menu .btn-bg p {
+  margin-bottom: 0;
+}
+
+#menu-container #menu .btn-bg p a {
+  color: black;
+  font-weight: 600;
+}
+
+#menu-container #menu .btn-bg:hover{
+  background-image: url('../app/@img/btn-bg-2.png');  
+}
+
+#menu-container #menu #btn-home:hover{
+  background-image: url('../app/@img/btn-home-bg-active.png');  
+}
+
 #menu-container #menu #android {
   top: 210px;
   left: 78px;
+}
+
+#menu-container #menu #agent {
+  top: 87px;
+  left: 184px;
+}
+
+#menu-container #menu #customer-service {
+  top: 42px;
+  left: 337px;
+}
+
+#menu-container #menu #gift {
+  top: 87px;
+  left: 490px;
+}
+
+#menu-container #menu #gift p {
+  font-size: 13px;
+}
+
+#menu-container #menu #ios {
+  top: 210px;
+  left: 592px;
 }
 
 #menu-container #menu .btn-bg img {
@@ -296,7 +349,6 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-
 
 .item-menu {
   padding-top: 10px;

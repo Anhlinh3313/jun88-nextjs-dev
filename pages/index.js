@@ -115,38 +115,39 @@ export default function Home() {
           <div className="col-lg-12 col-xl-5 pr-lg-0 float-lg-left p-0">
             <div id="domains-list">
               <div className="domains-list">
-                <div className="link" link="https://www.jun8811.com">
-                  <div className="col-8 p-0 float-left">
-                    <div className="link-number">
-                      <div className="yellow-circle">
-                        <div className="black-circle">
-                          <p className="test-p">1</p>
+                <div className="link">
+                  <Link href="https://www.jun8811.com">
+                    <div className="col-8 p-0 float-left">
+                      <div className="link-number">
+                        <div className="yellow-circle">
+                          <div className="black-circle">
+                            <p className="test-p">1</p>
+                          </div>
                         </div>
                       </div>
+                      <div className="float-left ml-2 link-info">
+                        <h5 className="d-inline text-white">100</h5>
+                        <span className="text-white">ms</span>
+                        <h5 className="d-inline text-white ml-3">
+                          Link truy cập 1
+                        </h5>
+                      </div>
                     </div>
-                    <div className="float-left ml-2 link-info">
-                      <h5 className="d-inline text-white">100</h5>
-                      <span className="text-white">ms</span>
-                      <h5 className="d-inline text-white ml-3">
-                        Link truy cập 1
-                      </h5>
-                    </div>
-                  </div>
+                  </Link>
                   <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8822.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
+                    <Link href="https://www.jun8822.com/">
+                      <p id="btn-1" className="btn button" >
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
                   </div>
                   <div className="clear-both"></div>
                 </div>
                 <div className="clear-both"></div>
               </div>
               <div className="domains-list">
-                <div className="link" link="https://www.jun8822.com/">
+                <div className="link">
+                  <Link href="https://www.jun8822.com/">
                   <div className="col-8 p-0 float-left">
                     <div className="link-number">
                       <div className="yellow-circle">
@@ -163,21 +164,21 @@ export default function Home() {
                       </h5>
                     </div>
                   </div>
+                  </Link>
                   <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8822.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
+                    <Link href="https://www.jun8822.com/">
+                      <p id="btn-1" className="btn button">
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
                   </div>
-                  <div className="clear-both"></div>
+                  <div className="clear-both"></div>  
                 </div>
                 <div className="clear-both"></div>
               </div>
               <div className="domains-list">
-                <div className="link" link="https://www.jun8833.com/">
+                <div className="link">
+                <Link href="https://www.jun8833.com/">
                   <div className="col-8 p-0 float-left">
                     <div className="link-number">
                       <div className="yellow-circle">
@@ -194,83 +195,84 @@ export default function Home() {
                       </h5>
                     </div>
                   </div>
+                </Link>
                   <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8833.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
+                    <Link href="https://www.jun8833.com/">
+                      <p id="btn-1" className="btn button">
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
                   </div>
                   <div className="clear-both"></div>
                 </div>
                 <div className="clear-both"></div>
               </div>
               <div className="domains-list">
-                <div className="link" link="https://www.jun8844.com/">
-                  <div className="col-8 p-0 float-left">
-                    <div className="link-number">
-                      <div className="yellow-circle">
-                        <div className="black-circle">
-                          <p className="test-p">4</p>
+                <div className="link" >
+                  <Link href="https://www.jun8844.com/">
+                    <div className="col-8 p-0 float-left">
+                      <div className="link-number">
+                        <div className="yellow-circle">
+                          <div className="black-circle">
+                            <p className="test-p">4</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="float-left ml-2 link-info">
-                      <h5 className="d-inline text-white">400</h5>
-                      <span className="text-white">ms</span>
-                      <h5 className="d-inline text-white ml-3">
-                        Link truy cập 4
-                      </h5>
-                    </div>
-                  </div>
-                  <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8844.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
-                  </div>
-                  <div className="clear-both"></div>
-                </div>
-                <div className="clear-both"></div>
-              </div>
-              <div className="domains-list">
-                <div className="link" link="https://www.jun8855.com/">
-                  <div className="col-8 p-0 float-left">
-                    <div className="link-number">
-                      <div className="yellow-circle">
-                        <div className="black-circle">
-                          <p className="test-p">5</p>
-                        </div>
+                      <div className="float-left ml-2 link-info">
+                        <h5 className="d-inline text-white">400</h5>
+                        <span className="text-white">ms</span>
+                        <h5 className="d-inline text-white ml-3">
+                          Link truy cập 4
+                        </h5>
                       </div>
                     </div>
-                    <div className="float-left ml-2 link-info">
-                      <h5 className="d-inline text-white">500</h5>
-                      <span className="text-white">ms</span>
-                      <h5 className="d-inline text-white ml-3">
-                        Link truy cập 5
-                      </h5>
-                    </div>
-                  </div>
+                  </Link>
+
                   <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8855.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
+                    <Link href="https://www.jun8844.com/">
+                      <p id="btn-1" className="btn button">
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
                   </div>
                   <div className="clear-both"></div>
                 </div>
                 <div className="clear-both"></div>
               </div>
               <div className="domains-list">
-                <div className="link" link="https://www.jun8866.com/">
+                <div className="link">
+                  <Link href="https://www.jun8844.com/">
+                    <div className="col-8 p-0 float-left">
+                      <div className="link-number">
+                        <div className="yellow-circle">
+                          <div className="black-circle">
+                            <p className="test-p">5</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="float-left ml-2 link-info">
+                        <h5 className="d-inline text-white">500</h5>
+                        <span className="text-white">ms</span>
+                        <h5 className="d-inline text-white ml-3">
+                          Link truy cập 5
+                        </h5>
+                      </div>
+                    </div>
+                  </Link>
+                  <div className="col-4 p-0 float-left text-right pr-2">
+                    <Link href="https://www.jun8844.com/">
+                      <p id="btn-1" className="btn button">
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
+                  </div>
+                  <div className="clear-both"></div>
+                </div>
+                <div className="clear-both"></div>
+              </div>
+              <div className="domains-list">
+                <div className="link">
+                <Link href="https://www.jun8866.com/">
                   <div className="col-8 p-0 float-left">
                     <div className="link-number">
                       <div className="yellow-circle">
@@ -287,14 +289,13 @@ export default function Home() {
                       </h5>
                     </div>
                   </div>
+                </Link>
                   <div className="col-4 p-0 float-left text-right pr-2">
-                    <a
-                      href="https://www.jun8866.com/"
-                      id="btn-1"
-                      className="btn button"
-                    >
-                      <span>Truy cập</span>
-                    </a>
+                    <Link href="https://www.jun8866.com/">
+                      <p id="btn-1" className="btn button" >
+                        <span>Truy cập</span>
+                      </p>
+                    </Link>
                   </div>
                   <div className="clear-both"></div>
                 </div>
@@ -310,124 +311,65 @@ export default function Home() {
             </div>
             <div className="btn-bg" id="android">
               <div className="item-menu-bg">
-                <a
-                  href="https://jun47.com/"
-                  target="_blank"
-                  className="icon"
-                  icon-name="android"
-                >
+                <Link href="https://jun47.com/" target="_blank" className="icon" icon-name="android" >
                   <Image src={ImgAndroid} alt="android-icon" />
-                </a>
-                <p>
-                  <a
-                    className="home-text-item"
-                    href="https://jun47.com/"
-                    target="_blank"
-                  >
-                    ANDROID
-                  </a>
-                </p>
+                </Link>
+                <Link href="https://jun47.com/" target="_blank">
+                    <p className="home-text-item">ANDROID</p>
+                </Link>  
               </div>
             </div>
             <div className="btn-bg" id="agent">
               <div className="item-menu-bg">
-                <a
-                  href="https://jun.bet/"
-                  target="_blank"
-                  className="icon"
-                  icon-name="agent"
-                >
+                <Link href="https://jun.bet/" target="_blank" className="icon" icon-name="agent">
                   <Image src={ImgAgent} alt="android-icon" />
-                </a>
-                <p>
-                  <a
-                    className="home-text-item"
-                    href="https://jun.bet/"
-                    target="_blank"
-                  >
-                    ĐẠI LÝ
-                  </a>
-                </p>
+                </Link>
+                <Link  href="https://jun.bet/" target="_blank" >
+                <p className="home-text-item">ĐẠI LÝ</p>
+                </Link>
               </div>
             </div>
             <div className="btn-bg" id="customer-service">
               <div className="item-menu-bg">
-                <a
-                  href="https://jun88.gofiber.dev/tawkto"
-                  target="_blank"
-                  className="icon"
-                  icon-name="customerService"
-                >
+                <Link href="https://jun88.gofiber.dev/tawkto" target="_blank" className="icon" icon-name="customerService" >
                   <Image src={ImgCus} alt="android-icon" />
-                </a>
-                <p>
-                  <a
-                    className="home-text-item"
-                    href="https://jun88.gofiber.dev/tawkto"
-                    target="_blank"
-                  >
-                    CSKH
-                  </a>
-                </p>
+                </Link>
+                  <Link href="https://jun88.gofiber.dev/tawkto" target="_blank">
+                    <p className="home-text-item">CSKH</p>
+                  </Link>
               </div>
             </div>
             <div className="btn-bg" id="gift">
               <div className="item-menu-bg">
-                <a
-                  href="https://www.jun85.com/promotions"
-                  target="_blank"
-                  className="icon"
-                  icon-name="gift"
-                >
+                <Link href="https://www.jun85.com/promotions" target="_blank" className="icon" icon-name="gift" >
                   <Image src={ImgGift} alt="android-icon" />
-                </a>
-                <p>
-                  <a
-                    className="home-text-item"
-                    href="https://www.jun85.com/promotions"
-                    target="_blank"
-                  >
-                    KHUYẾN MÃI
-                  </a>
-                </p>
+                </Link>
+                  <Link href="https://www.jun85.com/promotions" target="_blank">
+                    <p className="home-text-item">KHUYẾN MÃI</p>
+                  </Link>
               </div>
             </div>
             <div className="btn-bg" id="ios">
               <div className="item-menu-bg">
-                <a
-                  href="https://jun47.com/"
-                  target="_blank"
-                  className="icon"
-                  icon-name="ios"
-                >
+                <Link href="https://jun47.com/" target="_blank" className="icon" icon-name="ios" >
                   <Image src={ImgIOS} alt="android-icon" />
-                </a>
-                <p>
-                  <a
-                    className="home-text-item"
-                    href="https://jun47.com/"
-                    target="_blank"
-                  >
-                    IOS
-                  </a>
-                </p>
+                </Link>
+                  <Link href="https://jun47.com/" target="_blank" >
+                    <p className="home-text-item">IOS</p>
+                  </Link>
               </div>
             </div>
             <div id="btn-home">
               <div id="btn-home-items">
                 <div id="home-icon">
-                  <a href="https://www.jun82.com/" target="_blank">
+                  <Link href="https://www.jun82.com/" target="_blank">
                     <Image src={ImgHome} alt="android-icon" />
-                  </a>
+                  </Link>
                 </div>
                 <div id="home-text">
-                  <a
-                    className="home-text-item"
-                    href="https://www.jun82.com/"
-                    target="_blank"
-                  >
-                    TRANG CHỦ
-                  </a>
+                  <Link className="home-text-item" href="https://www.jun82.com/" target="_blank">
+                    <p className="home-text-item">TRANG CHỦ</p>
+                  </Link>
                 </div>
                 <div className="clear-both"></div>
               </div>
