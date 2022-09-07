@@ -7,6 +7,9 @@ const nextConfig = {
       allowFutureImage: true,
     },
   },
+  env: {
+    api_Jun88: "http://localhost:41966",
+  },
 };
 
 module.exports = nextConfig;

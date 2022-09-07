@@ -18,6 +18,8 @@ export { default as ImgCus } from "./customer-service-icon.png";
 export { default as ImgGift } from "./gift-icon.png";
 export { default as ImgIOS } from "./ios-icon.png";
 export { default as ImgHome } from "./home-icon.png";
+export { default as ImgMenubg } from "./menu-bg.png";
+
 
 
 

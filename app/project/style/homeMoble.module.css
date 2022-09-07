@@ -1,0 +1,116 @@
+.boxPromos {
+    padding: 10px 0;
+    width: 100%;
+    height: 215px;
+}
+
+#menuContainer {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0;
+}
+
+#menuContainer #menu {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+#menu_bg {
+    width: 100%;
+}
+
+#menuContainer #menu .btn_bg {
+    background-image: url('../style/btn-bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+}
+
+#menuContainer #menu .btn_bg:hover {
+    cursor: pointer;
+}
+
+#menuContainer #menu .btn_bg:hover>p a {
+    color: white;
+}
+
+#menuContainer #menu .btn_bg img {
+    margin-top: 35px;
+}
+
+#menuContainer #menu .btn_bg p {
+    margin-bottom: 0;
+}
+
+#menuContainer #menu .btn_bg p a {
+    color: black;
+    font-weight: 600;
+}
+
+#menuContainer #menu .btn_bg:hover {
+    background-image: url('../style/btn-bg-2.png');
+}
+
+#menuContainer #menu #btn_home:hover {
+    background-image: url('../style/btn-home-bg-active.png');
+}
+
+#android {
+    top: 210px;
+    left: 78px;
+}
+
+#agent {
+    top: 87px;
+    left: 184px;
+}
+
+#customer_service {
+    top: 42px;
+    left: 337px;
+}
+
+#gift {
+    top: 87px;
+    left: 490px;
+}
+
+#gift p {
+    font-size: 13px;
+}
+
+#ios {
+    top: 210px;
+    left: 592px;
+}
+
+#menuContainer #menu .btn_bg img {
+    margin: 0 auto 0 auto;
+}
+
+#btn_home {
+    background-image: url('../style/btn-home-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 84px;
+    position: absolute;
+    top: 240px;
+    left: 250px;
+}
+
+#btn_home_items {
+    margin-top: 23px;
+    margin-left: 50px;
+}
