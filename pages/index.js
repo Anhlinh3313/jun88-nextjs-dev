@@ -10,17 +10,6 @@ import { useEffect, useState } from "react";
 SwiperCore.use([Autoplay]);
 
 export default function Home() {
-
-  const [chromeWidth, setChromeWidth] = useState(0);
-  let resizeWindow = () => {
-    setChromeWidth(window.innerWidth);
-  };
-  useEffect(() => {
-    resizeWindow();
-    window.addEventListener("resize", resizeWindow);
-    return () => window.removeEventListener("resize", resizeWindow);
-  }, []);
-
   return (
     <div>
       <Head>
@@ -28,7 +17,8 @@ export default function Home() {
         <meta name="Thông tin tổng đài" content="Thông tin tổng đài" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <>{chromeWidth > 1050 ? <HomePC /> : <HomeApp />} </>;
+      <HomePC />
+      {/* <>{chromeWidth > 1050 ? <HomePC /> : <HomeApp />} </>; */}
     </div>
   );
 }

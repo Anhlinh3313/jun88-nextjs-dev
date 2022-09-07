@@ -28,17 +28,17 @@ import Styles from "./style/homeMoble.module.css";
 
 const HomeApp = () => {
   return (
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
+    <div className="container text-center">
+      <div className="row">
+        <div className="col">
           <div className="logo">
             <Image width={323} height={88} src={ImgLogo} alt="" />
           </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <div className="notification">
             <div className="icon-noti">
               <Image src={ImgRinging} alt="" />
@@ -52,8 +52,8 @@ const HomeApp = () => {
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <div className={Styles.boxPromos}>
             <Swiper
               direction={"vertical"}
@@ -110,8 +110,8 @@ const HomeApp = () => {
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <div id="domains-list">
             <div className="domains-list">
               <div className="link">
@@ -280,78 +280,107 @@ const HomeApp = () => {
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <div id={Styles.menuContainer}>
             <div id={Styles.menu}>
-                <div id={Styles.menu_bg}>
-                    <Image src={ImgMenubg} alt="" />
+              <div id={Styles.menu_bg}>
+                <Image src={ImgMenubg} alt="" />
+              </div>
+              <div className={Styles.btn_bg} id={Styles.android}>
+                <div className="item-menu-bg">
+                  <Link
+                    href="https://jun47.com/"
+                    target="_blank"
+                    className="icon"
+                    icon-name="android"
+                  >
+                    <Image src={ImgAndroid} alt="android-icon" />
+                  </Link>
+                  <Link href="https://jun47.com/" target="_blank">
+                    <p className="home-text-item">ANDROID</p>
+                  </Link>
                 </div>
-                <div className={Styles.btn_bg} id={Styles.android}>
-                    <div className="item-menu-bg">
-                        <Link href="https://jun47.com/" target="_blank" className="icon" icon-name="android" >
-                            <Image src={ImgAndroid} alt="android-icon" />
-                        </Link>
-                        <Link href="https://jun47.com/" target="_blank">
-                            <p className="home-text-item">ANDROID</p>
-                        </Link>  
-                    </div>
-                </div>
-                <div className={Styles.btn_bg} id={Styles.agent}>
-                    <div className="item-menu-bg">
-                    <Link href="https://jun.bet/" target="_blank" className="icon" icon-name="agent">
-                        <Image src={ImgAgent} alt="android-icon" />
-                    </Link>
-                    <Link  href="https://jun.bet/" target="_blank" >
+              </div>
+              <div className={Styles.btn_bg} id={Styles.agent}>
+                <div className="item-menu-bg">
+                  <Link
+                    href="https://jun.bet/"
+                    target="_blank"
+                    className="icon"
+                    icon-name="agent"
+                  >
+                    <Image src={ImgAgent} alt="android-icon" />
+                  </Link>
+                  <Link href="https://jun.bet/" target="_blank">
                     <p className="home-text-item">ĐẠI LÝ</p>
+                  </Link>
+                </div>
+              </div>
+              <div className={Styles.btn_bg} id={Styles.customer_service}>
+                <div className="item-menu-bg">
+                  <Link
+                    href="https://jun88.gofiber.dev/tawkto"
+                    target="_blank"
+                    className="icon"
+                    icon-name="customerService"
+                  >
+                    <Image src={ImgCus} alt="android-icon" />
+                  </Link>
+                  <Link href="https://jun88.gofiber.dev/tawkto" target="_blank">
+                    <p className="home-text-item">CSKH</p>
+                  </Link>
+                </div>
+              </div>
+              <div className={Styles.btn_bg} id={Styles.gift}>
+                <div className="item-menu-bg">
+                  <Link
+                    href="https://www.jun85.com/promotions"
+                    target="_blank"
+                    className="icon"
+                    icon-name="gift"
+                  >
+                    <Image src={ImgGift} alt="android-icon" />
+                  </Link>
+                  <Link href="https://www.jun85.com/promotions" target="_blank">
+                    <p className="home-text-item">KHUYẾN MÃI</p>
+                  </Link>
+                </div>
+              </div>
+              <div className={Styles.btn_bg} id={Styles.ios}>
+                <div className="item-menu-bg">
+                  <Link
+                    href="https://jun47.com/"
+                    target="_blank"
+                    className="icon"
+                    icon-name="ios"
+                  >
+                    <Image src={ImgIOS} alt="android-icon" />
+                  </Link>
+                  <Link href="https://jun47.com/" target="_blank">
+                    <p className="home-text-item">IOS</p>
+                  </Link>
+                </div>
+              </div>
+              <div id={Styles.btn_home}>
+                <div id="btn-home-items">
+                  <div id="home-icon">
+                    <Link href="https://www.jun82.com/" target="_blank">
+                      <Image src={ImgHome} alt="android-icon" />
                     </Link>
-                    </div>
-                </div>
-                <div className={Styles.btn_bg} id={Styles.customer_service}>
-                    <div className="item-menu-bg">
-                    <Link href="https://jun88.gofiber.dev/tawkto" target="_blank" className="icon" icon-name="customerService" >
-                        <Image src={ImgCus} alt="android-icon" />
+                  </div>
+                  <div id="home-text">
+                    <Link
+                      className="home-text-item"
+                      href="https://www.jun82.com/"
+                      target="_blank"
+                    >
+                      <p className="home-text-item">TRANG CHỦ</p>
                     </Link>
-                        <Link href="https://jun88.gofiber.dev/tawkto" target="_blank">
-                        <p className="home-text-item">CSKH</p>
-                        </Link>
-                    </div>
+                  </div>
+                  <div className="clear-both"></div>
                 </div>
-                <div className={Styles.btn_bg} id={Styles.gift}>
-                    <div className="item-menu-bg">
-                    <Link href="https://www.jun85.com/promotions" target="_blank" className="icon" icon-name="gift" >
-                        <Image src={ImgGift} alt="android-icon" />
-                    </Link>
-                        <Link href="https://www.jun85.com/promotions" target="_blank">
-                        <p className="home-text-item">KHUYẾN MÃI</p>
-                        </Link>
-                    </div>
-                </div>
-                <div className={Styles.btn_bg} id={Styles.ios}>
-                    <div className="item-menu-bg">
-                    <Link href="https://jun47.com/" target="_blank" className="icon" icon-name="ios" >
-                        <Image src={ImgIOS} alt="android-icon" />
-                    </Link>
-                        <Link href="https://jun47.com/" target="_blank" >
-                        <p className="home-text-item">IOS</p>
-                        </Link>
-                    </div>
-                </div>
-                <div id={Styles.btn_home}>
-                    <div id="btn-home-items">
-                    <div id="home-icon">
-                        <Link href="https://www.jun82.com/" target="_blank">
-                        <Image src={ImgHome} alt="android-icon" />
-                        </Link>
-                    </div>
-                    <div id="home-text">
-                        <Link className="home-text-item" href="https://www.jun82.com/" target="_blank">
-                        <p className="home-text-item">TRANG CHỦ</p>
-                        </Link>
-                    </div>
-                    <div className="clear-both"></div>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
